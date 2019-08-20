@@ -1,3 +1,6 @@
+
+/* MOBILE */
+
 body {
   width: 480px;
   margin: auto;
@@ -9,75 +12,134 @@ div {
   text-align: center;
 }
 
-.box-a {
+#inner-section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 480px;
+}
+
+#box-a {
   width: 480px;
   height: 75px;
   line-height: 75px;
 }
 
-.box-b {
+#box-b {
   width: 480px;
   height: 150px;
   line-height: 150px;
 }
 
-.box-c-d {
-  width: 480px;
+#box-c, #box-d {
+  width: 100%;
   height: 125px;
   line-height: 125px;
 }
 
-.box-e-h {
-  width: 240px;
+#box-e, #box-f, #box-g, #box-h {
+  width: 50%;
   height: 250px;
   line-height: 250px;
 }
 
-.box-i {
+#box-i {
   width: 480px;
   height: 80px;
   line-height: 80px;
 }
 
-
-@media(min-width: 768px){
+/* TABLET */
+@media (min-width: 768px) and (max-width: 960px){
+  
   body {
-    width: 960px;
+    width: 768px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
+  
+  div {
+    text-align: center;
+  }
+  
+  #box-a {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+  }
+  
+  #box-b {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+  }
+  
+  #inner-section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 768px;
+  }
 
+  #box-c, #box-d {
+    width: 100%;
+    height: 125px;
+    line-height: 125px;
+  }
+  
+  #box-e, #box-f, #box-g, #box-h {
+    width: 50%;
+    height: 250px;
+    line-height: 250px;
+  }
+  
+  #box-i {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+}
 
-  .box-a {
+@media all and (min-width: 960px){ 
+
+  body {
     width: 960px;
+    margin: auto;
+    
+  }
+
+  #inner-section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 760px;
+  }
+
+  #box-a {
+    width: 100%;
     height: 100px;
     line-height: 100px;
   }
-  
-  .box-b {
+  #box-b {
     width: 200px;
     height: 600px;
     line-height: 600px;
   }
-  
-  .box-c-d {
-    width: 380px;
+
+  #box-c, #box-d {
+    width: 50%;
     height: 200px;
     line-height: 200px;
   }
-  
-  .box-e-h {
-    width: 190px;
+
+  #box-e, #box-f, #box-g, #box-h {
+    width: 25%;
     height: 250px;
     line-height: 250px;
     
   }
-  
-  .box-i {
-    width: 760px;
+
+  #box-i {
+    width: 100%;
     height: 150px;
     line-height: 150px;
   }
-}
-
+ }
